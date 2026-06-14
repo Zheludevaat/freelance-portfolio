@@ -1,0 +1,6 @@
+cust_id,first_name,last_name,email_address,phone_number,sign_up_date
+3001,David,Rodriguez,david.rodriguez@email.com,555-0301,2023-01-30
+3002,Lisa,Wilson,lisa.wilson@email.com,555-0302,2023-02-04
+3003,Mary,Johnson,mary.johnson@email.com,555-0102,2023-01-20
+3004,Michael,Davis,michael.davis@email.com,555-0202,2023-02-03
+3005,Robert,Jones,robert.jones@email.com,555-0105,2023-02-10

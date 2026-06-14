@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neighbourhood Café</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Neighbourhood Café</h1>
+      <p>Fresh ingredients, warm atmosphere, and friendly service</p>
+      <button onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'});">View Menu</button>
+    </div>
+  </section>
+
+  <!-- Menu Gallery -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://placehold.co/300x200/8B4513/FFFFFF?text=Croissant" alt="Croissant">
+        <h3>Fresh Croissants</h3>
+        <p>Buttery, flaky pastries baked fresh daily</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://placehold.co/300x200/8B4513/FFFFFF?text=Coffee" alt="Coffee">
+        <h3>Premium Coffee</h3>
+        <p>Locally roasted beans with expert brewing</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://placehold.co/300x200/8B4513/FFFFFF?text=Sandwich" alt="Sandwich">
+        <h3>Gourmet Sandwiches</h3>
+        <p>Made with organic bread and local ingredients</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map -->
+  <section class="location">
+    <h2>Find Us</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543455684!2d144.9537963159044!3d-37.8162119797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8a5b8c7b7%3A0x504567521d5d7e0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1628765152879!5m2!1sen!2sau"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Neighbourhood Café. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
