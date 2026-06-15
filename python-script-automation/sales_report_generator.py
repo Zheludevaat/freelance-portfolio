@@ -73,7 +73,8 @@ def create_charts(monthly_sales):
     ax.set_xticklabels(monthly_sales['year_month'], rotation=45)
     plt.tight_layout()
     
-    # Save chart to file
+    # Save chart to file (ensure the output directory exists first)
+    os.makedirs('output', exist_ok=True)
     chart_path = 'output/sales_chart.png'
     plt.savefig(chart_path)
     plt.close()
